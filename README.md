@@ -2,7 +2,7 @@
 It is a java web application that you can create and manage your tasks.
 
 # Technologies
-- Spring WEB
+- Spring MVC
 - Spring Data (JPA)
 - Sprig Security
 - PostgreSQL
