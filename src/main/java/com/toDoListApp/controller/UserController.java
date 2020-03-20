@@ -174,8 +174,10 @@ public class UserController {
 				User persistedUser = this.userService.findById(user.getId()).get();
 				persistedUser.setFirstname(user.getFirstname());
 				persistedUser.setLastname(user.getLastname());
-				persistedUser.setStatus(user.getStatus());
-				persistedUser.setUsername(user.getUsername());
+				persistedUser.setStatus(user.getStatus() != null ? user.getStatus() : persistedUser.getStatus());
+				if (user.getUsername() != null && !user.getUsername().trim().isEmpty()) {
+					persistedUser.setUsername(user.getUsername());
+				}
 				if (user.getPassword() != null && !user.getPassword().trim().isEmpty()) {
 					persistedUser.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
 				}
