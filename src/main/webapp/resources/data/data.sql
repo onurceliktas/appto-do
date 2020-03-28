@@ -30,3 +30,6 @@
    owner BIGINT references "user"(id),
    status INT
 );
+
+insert into role (name, status) values ('admin', 1);
+insert into role (name, status) values ('user', 1);
