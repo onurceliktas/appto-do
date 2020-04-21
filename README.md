@@ -1,5 +1,5 @@
 # AppTo-Do
-It is a java web application that you can create and manage your tasks. The app runs on [heroku](https://appto-do.herokuapp.com) platform.
+It is a java web application that you can create and manage your tasks. The app runs on <a href="https://appto-do.herokuapp.com" target="_blank">heroku</a> platform.
 
 # Technologies
 - Spring MVC
